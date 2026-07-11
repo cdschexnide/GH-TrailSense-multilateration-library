@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "name": "nominal",
+      "rssi": -60,
+      "age_ms": 0,
+      "exp_weight": 30
+    },
+    {
+      "name": "rssi_clamp_low",
+      "rssi": -100,
+      "age_ms": 0,
+      "exp_weight": 7
+    },
+    {
+      "name": "rssi_clamp_high",
+      "rssi": 0,
+      "age_ms": 0,
+      "exp_weight": 75
+    },
+    {
+      "name": "age_weight_floor",
+      "rssi": -50,
+      "age_ms": 40000,
+      "exp_weight": 3
+    },
+    {
+      "name": "min_1_floor",
+      "rssi": -95,
+      "age_ms": 1000000,
+      "exp_weight": 1
+    },
+    {
+      "name": "floor_div_behavior",
+      "rssi": -67,
+      "age_ms": 300,
+      "exp_weight": 24
+    }
+  ]
+}

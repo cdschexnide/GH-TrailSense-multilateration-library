@@ -1,0 +1,17 @@
+{
+  "backend_sha": "93ff202e246bc9d46a47d6cb0580b9ac0ca6074c",
+  "backend_sha_short": "93ff202",
+  "generated": "2026-07-01T03:20:53.117Z",
+  "note": "Parity fixtures generated from the LIVE TrailSense backend functions. Representation: backend Date(t) <-> C ts_ms=t (uint32); macHash hex <-> mac_hash[4]. Float compare tol: <=1 cm (and lat/lon projected to meters); EXACT on counts/enums/gates. multilaterate.backend_measurement_count is informational (C contract does not expose survivor count). The streaming open-window service case is intentionally omitted (stateless C library; design §4).",
+  "groups": [
+    "pathloss",
+    "enu",
+    "compute_weight",
+    "multilaterate",
+    "bilaterate",
+    "ellipse",
+    "correlate",
+    "solve",
+    "triangulate"
+  ]
+}

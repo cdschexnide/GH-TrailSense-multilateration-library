@@ -1,0 +1,9 @@
+build/
+*.o
+*.a
+*.so
+*.dylib
+
+# Local-only doc source and root PDFs (not shipped)
+.condensed/
+/*.pdf

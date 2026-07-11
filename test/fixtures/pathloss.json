@@ -1,0 +1,83 @@
+{
+  "band_priors": [
+    {
+      "name": "wifi",
+      "band": 0,
+      "tx_dbm": 18,
+      "a_cdb": 4000,
+      "n_milli": 2000
+    },
+    {
+      "name": "ble",
+      "band": 1,
+      "tx_dbm": 8,
+      "a_cdb": 4000,
+      "n_milli": 2000
+    },
+    {
+      "name": "cell",
+      "band": 2,
+      "tx_dbm": 23,
+      "a_cdb": 3800,
+      "n_milli": 2000
+    }
+  ],
+  "cases": [
+    {
+      "name": "wifi_default_rssi_-60",
+      "band": 0,
+      "rssi": -60,
+      "a_cdb": 0,
+      "n_milli": 0,
+      "expected_distance_cm": 7943
+    },
+    {
+      "name": "ble_default_rssi_-60",
+      "band": 1,
+      "rssi": -60,
+      "a_cdb": 0,
+      "n_milli": 0,
+      "expected_distance_cm": 2512
+    },
+    {
+      "name": "cell_default_rssi_-60",
+      "band": 2,
+      "rssi": -60,
+      "a_cdb": 0,
+      "n_milli": 0,
+      "expected_distance_cm": 17783
+    },
+    {
+      "name": "wifi_override_A30_n2.5_rssi_-60",
+      "band": 0,
+      "rssi": -60,
+      "a_cdb": 3000,
+      "n_milli": 2500,
+      "expected_distance_cm": 8318
+    },
+    {
+      "name": "wifi_exponent0_rssi_-22",
+      "band": 0,
+      "rssi": -22,
+      "a_cdb": 0,
+      "n_milli": 0,
+      "expected_distance_cm": 100
+    },
+    {
+      "name": "wifi_clamp_low_rssi_0",
+      "band": 0,
+      "rssi": 0,
+      "a_cdb": 0,
+      "n_milli": 0,
+      "expected_distance_cm": 50
+    },
+    {
+      "name": "wifi_clamp_high_rssi_-127",
+      "band": 0,
+      "rssi": -127,
+      "a_cdb": 0,
+      "n_milli": 0,
+      "expected_distance_cm": 65500
+    }
+  ]
+}

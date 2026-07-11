@@ -1,0 +1,497 @@
+{
+  "cases": [
+    {
+      "name": "happy_path_one_position",
+      "obs": [
+        {
+          "node_id": 1,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -45,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 2,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -49,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 3,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -49,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        }
+      ],
+      "anchors": [
+        {
+          "node_id": 1,
+          "lat": 40,
+          "lon": -75,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 2,
+          "lat": 40,
+          "lon": -74.99964820141322,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 3,
+          "lat": 40.0002694933525,
+          "lon": -75,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        }
+      ],
+      "exp_pos": [
+        {
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "lat": 40.00008797787561,
+          "lon": -74.99988515308661,
+          "accuracy_m": 0.13997496638284643,
+          "confidence": 70,
+          "measurement_count": 3,
+          "peak_rssi": -45,
+          "error_semi_major_m": 0.13997496638284643,
+          "error_semi_minor_m": 0.13997496638284643,
+          "error_major_axis_deg": 0,
+          "mac_hex": "deadbeef"
+        }
+      ]
+    },
+    {
+      "name": "single_node_zero_positions",
+      "obs": [
+        {
+          "node_id": 1,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -58,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 1,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -60,
+          "ts_ms": 1000040,
+          "mac_hex": "deadbeef"
+        }
+      ],
+      "anchors": [
+        {
+          "node_id": 1,
+          "lat": 40,
+          "lon": -75,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 2,
+          "lat": 40,
+          "lon": -74.99964820141322,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 3,
+          "lat": 40.0002694933525,
+          "lon": -75,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        }
+      ],
+      "exp_pos": []
+    },
+    {
+      "name": "two_node_bilateration_one_position",
+      "obs": [
+        {
+          "node_id": 1,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -46,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 2,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -46,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        }
+      ],
+      "anchors": [
+        {
+          "node_id": 1,
+          "lat": 40,
+          "lon": -75,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 2,
+          "lat": 40,
+          "lon": -74.99964820141322,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 3,
+          "lat": 40.0002694933525,
+          "lon": -75,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        }
+      ],
+      "exp_pos": [
+        {
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "lat": 40,
+          "lon": -74.9998241007066,
+          "accuracy_m": 9.544122595527165,
+          "confidence": 40,
+          "measurement_count": 2,
+          "peak_rssi": -46,
+          "error_semi_major_m": 9.544122595527165,
+          "error_semi_minor_m": 5.120790954431945,
+          "error_major_axis_deg": 90,
+          "mac_hex": "deadbeef"
+        }
+      ]
+    },
+    {
+      "name": "multi_subset_one_solvable",
+      "obs": [
+        {
+          "node_id": 1,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -45,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 2,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -49,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 3,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -49,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 1,
+          "mac": [
+            202,
+            254,
+            186,
+            190
+          ],
+          "band": 0,
+          "rssi": -58,
+          "ts_ms": 1000000,
+          "mac_hex": "cafebabe"
+        }
+      ],
+      "anchors": [
+        {
+          "node_id": 1,
+          "lat": 40,
+          "lon": -75,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 2,
+          "lat": 40,
+          "lon": -74.99964820141322,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 3,
+          "lat": 40.0002694933525,
+          "lon": -75,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        }
+      ],
+      "exp_pos": [
+        {
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "lat": 40.00008797787561,
+          "lon": -74.99988515308661,
+          "accuracy_m": 0.13997496638284643,
+          "confidence": 70,
+          "measurement_count": 3,
+          "peak_rssi": -45,
+          "error_semi_major_m": 0.13997496638284643,
+          "error_semi_minor_m": 0.13997496638284643,
+          "error_major_axis_deg": 0,
+          "mac_hex": "deadbeef"
+        }
+      ]
+    },
+    {
+      "name": "collinear_anchors_zero_positions",
+      "obs": [
+        {
+          "node_id": 1,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -46,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 2,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -46,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 3,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -55,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        }
+      ],
+      "anchors": [
+        {
+          "node_id": 1,
+          "lat": 40,
+          "lon": -75,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 2,
+          "lat": 40.00000089831118,
+          "lon": -74.99964820141322,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 3,
+          "lat": 40.00000179662235,
+          "lon": -74.99929640282645,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        }
+      ],
+      "exp_pos": []
+    },
+    {
+      "name": "bench_triangle_regression",
+      "obs": [
+        {
+          "node_id": 1,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -58,
+          "ts_ms": 1000000,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 2,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -63,
+          "ts_ms": 1000040,
+          "mac_hex": "deadbeef"
+        },
+        {
+          "node_id": 3,
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "rssi": -67,
+          "ts_ms": 1000080,
+          "mac_hex": "deadbeef"
+        }
+      ],
+      "anchors": [
+        {
+          "node_id": 1,
+          "lat": 45,
+          "lon": -93,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 2,
+          "lat": 45.00009,
+          "lon": -93,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        },
+        {
+          "node_id": 3,
+          "lat": 45.000045,
+          "lon": -92.99991,
+          "a_cdb": 4000,
+          "n_milli": 2000,
+          "enrolled": 1
+        }
+      ],
+      "exp_pos": [
+        {
+          "mac": [
+            222,
+            173,
+            190,
+            239
+          ],
+          "band": 0,
+          "lat": 44.99956869063384,
+          "lon": -93.0012342398438,
+          "accuracy_m": 33.17156859728809,
+          "confidence": 70,
+          "measurement_count": 3,
+          "peak_rssi": -58,
+          "error_semi_major_m": 33.17156859728809,
+          "error_semi_minor_m": 33.17156859728809,
+          "error_major_axis_deg": 0,
+          "mac_hex": "deadbeef"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "anchors": [
+    {"node_id": 1, "lat": 45.0,       "lon": -93.0,      "enrolled": true},
+    {"node_id": 2, "lat": 45.00009,   "lon": -93.0,      "enrolled": true},
+    {"node_id": 3, "lat": 45.000045,  "lon": -92.99991,  "enrolled": true,
+     "path_loss_a_cdb": 4000, "path_loss_n_milli": 2000}
+  ],
+  "obs": [
+    {"node_id": 1, "mac_hash": "deadbeef", "band": 0, "rssi": -55, "ts_ms": 1000},
+    {"node_id": 2, "mac_hash": "deadbeef", "band": 0, "rssi": -60, "ts_ms": 1050},
+    {"node_id": 3, "mac_hash": "deadbeef", "band": 0, "rssi": -62, "ts_ms": 1100},
+
+    {"node_id": 1, "mac_hash": "cafef00d", "band": 1, "rssi": -70, "ts_ms": 1200},
+    {"node_id": 2, "mac_hash": "cafef00d", "band": 1, "rssi": -72, "ts_ms": 1250}
+  ]
+}

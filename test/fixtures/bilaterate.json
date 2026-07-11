@@ -1,0 +1,110 @@
+{
+  "conf_bilateration": 40,
+  "cases": [
+    {
+      "name": "on_baseline_h0",
+      "meas": [
+        {
+          "eastCm": 0,
+          "northCm": 0,
+          "distanceCm": 400,
+          "weight": 50
+        },
+        {
+          "eastCm": 1000,
+          "northCm": 0,
+          "distanceCm": 600,
+          "weight": 50
+        }
+      ],
+      "exp_ret": 0,
+      "exp_east_cm": 400,
+      "exp_north_cm": 0,
+      "exp_accuracy_cm": 0
+    },
+    {
+      "name": "off_baseline_accuracy_is_perp",
+      "meas": [
+        {
+          "eastCm": 0,
+          "northCm": 0,
+          "distanceCm": 500,
+          "weight": 50
+        },
+        {
+          "eastCm": 1000,
+          "northCm": 0,
+          "distanceCm": 670.820393249937,
+          "weight": 50
+        }
+      ],
+      "exp_ret": 0,
+      "exp_east_cm": 400,
+      "exp_north_cm": 0,
+      "exp_accuracy_cm": 300
+    },
+    {
+      "name": "coincident_null",
+      "meas": [
+        {
+          "eastCm": 500,
+          "northCm": 500,
+          "distanceCm": 100,
+          "weight": 50
+        },
+        {
+          "eastCm": 500,
+          "northCm": 500,
+          "distanceCm": 100,
+          "weight": 50
+        }
+      ],
+      "exp_ret": -1,
+      "exp_east_cm": null,
+      "exp_north_cm": null,
+      "exp_accuracy_cm": null
+    },
+    {
+      "name": "non_reaching_clamped_h0",
+      "meas": [
+        {
+          "eastCm": 0,
+          "northCm": 0,
+          "distanceCm": 100,
+          "weight": 50
+        },
+        {
+          "eastCm": 1000,
+          "northCm": 0,
+          "distanceCm": 100,
+          "weight": 50
+        }
+      ],
+      "exp_ret": 0,
+      "exp_east_cm": 500,
+      "exp_north_cm": 0,
+      "exp_accuracy_cm": 0
+    },
+    {
+      "name": "along_track_clamp_to_far",
+      "meas": [
+        {
+          "eastCm": 0,
+          "northCm": 0,
+          "distanceCm": 5000,
+          "weight": 50
+        },
+        {
+          "eastCm": 1000,
+          "northCm": 0,
+          "distanceCm": 100,
+          "weight": 50
+        }
+      ],
+      "exp_ret": 0,
+      "exp_east_cm": 1000,
+      "exp_north_cm": 0,
+      "exp_accuracy_cm": 4898.979485566356
+    }
+  ]
+}

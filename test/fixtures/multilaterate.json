@@ -1,0 +1,128 @@
+{
+  "cases": [
+    {
+      "name": "clean_3_anchor",
+      "meas": [
+        {
+          "eastCm": 0,
+          "northCm": 0,
+          "distanceCm": 1414,
+          "weight": 50
+        },
+        {
+          "eastCm": 3000,
+          "northCm": 0,
+          "distanceCm": 2236,
+          "weight": 50
+        },
+        {
+          "eastCm": 0,
+          "northCm": 3000,
+          "distanceCm": 2236,
+          "weight": 50
+        }
+      ],
+      "exp_ret": 0,
+      "exp_east_cm": 999.9798981766454,
+      "exp_north_cm": 999.9798981766454,
+      "exp_accuracy_cm": 0.11302301471141618,
+      "backend_measurement_count": 3
+    },
+    {
+      "name": "4_good_1_bad_outlier_rejected",
+      "meas": [
+        {
+          "eastCm": 0,
+          "northCm": 0,
+          "distanceCm": 1414,
+          "weight": 50
+        },
+        {
+          "eastCm": 3000,
+          "northCm": 0,
+          "distanceCm": 2236,
+          "weight": 50
+        },
+        {
+          "eastCm": 0,
+          "northCm": 3000,
+          "distanceCm": 2236,
+          "weight": 50
+        },
+        {
+          "eastCm": 3000,
+          "northCm": 3000,
+          "distanceCm": 2828,
+          "weight": 50
+        },
+        {
+          "eastCm": 1500,
+          "northCm": 1500,
+          "distanceCm": 8000,
+          "weight": 50
+        }
+      ],
+      "exp_ret": 0,
+      "exp_east_cm": 908.4250163322754,
+      "exp_north_cm": 908.4250163322754,
+      "exp_accuracy_cm": 77.35360101673021,
+      "backend_measurement_count": 4
+    },
+    {
+      "name": "lone_outlier_3_good_NOT_rejected_median_breakdown",
+      "meas": [
+        {
+          "eastCm": 0,
+          "northCm": 0,
+          "distanceCm": 1414,
+          "weight": 50
+        },
+        {
+          "eastCm": 3000,
+          "northCm": 0,
+          "distanceCm": 2236,
+          "weight": 50
+        },
+        {
+          "eastCm": 0,
+          "northCm": 3000,
+          "distanceCm": 2236,
+          "weight": 50
+        },
+        {
+          "eastCm": 3000,
+          "northCm": 3000,
+          "distanceCm": 50,
+          "weight": 50
+        }
+      ],
+      "exp_ret": 0,
+      "exp_east_cm": 1903.23385792392,
+      "exp_north_cm": 1903.23385792392,
+      "exp_accuracy_cm": 472.24823956596816,
+      "backend_measurement_count": 4
+    },
+    {
+      "name": "n_lt_3_null",
+      "meas": [
+        {
+          "eastCm": 0,
+          "northCm": 0,
+          "distanceCm": 1414,
+          "weight": 50
+        },
+        {
+          "eastCm": 3000,
+          "northCm": 0,
+          "distanceCm": 2236,
+          "weight": 50
+        }
+      ],
+      "exp_ret": -1,
+      "exp_east_cm": null,
+      "exp_north_cm": null,
+      "exp_accuracy_cm": null,
+      "backend_measurement_count": null
+    }
+  ]
+}

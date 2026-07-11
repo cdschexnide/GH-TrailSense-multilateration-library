@@ -1,0 +1,353 @@
+{
+  "window_ms": 5000,
+  "cases": [
+    {
+      "name": "three_distinct_nodes_one_window",
+      "obs": [
+        {
+          "node_id": 1,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -50,
+          "ts_ms": 1000000,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 2,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -60,
+          "ts_ms": 1000100,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 3,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -70,
+          "ts_ms": 1000200,
+          "mac_hex": "aabbccdd"
+        }
+      ],
+      "exp_wins": [
+        {
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "nodes": [
+            {
+              "node_id": 1,
+              "rssi": -50,
+              "ts_ms": 1000000
+            },
+            {
+              "node_id": 2,
+              "rssi": -60,
+              "ts_ms": 1000100
+            },
+            {
+              "node_id": 3,
+              "rssi": -70,
+              "ts_ms": 1000200
+            }
+          ],
+          "mac_hex": "aabbccdd"
+        }
+      ]
+    },
+    {
+      "name": "two_distinct_nodes_no_window",
+      "obs": [
+        {
+          "node_id": 1,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -60,
+          "ts_ms": 1000000,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 2,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -60,
+          "ts_ms": 1000100,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 1,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -60,
+          "ts_ms": 1000200,
+          "mac_hex": "aabbccdd"
+        }
+      ],
+      "exp_wins": [
+        {
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "nodes": [
+            {
+              "node_id": 1,
+              "rssi": -60,
+              "ts_ms": 1000200
+            },
+            {
+              "node_id": 2,
+              "rssi": -60,
+              "ts_ms": 1000100
+            }
+          ],
+          "mac_hex": "aabbccdd"
+        }
+      ]
+    },
+    {
+      "name": "same_node_twice_latest_ts_wins",
+      "obs": [
+        {
+          "node_id": 1,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -45,
+          "ts_ms": 1000500,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 1,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -85,
+          "ts_ms": 1000000,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 2,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -60,
+          "ts_ms": 1000100,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 3,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -70,
+          "ts_ms": 1000200,
+          "mac_hex": "aabbccdd"
+        }
+      ],
+      "exp_wins": [
+        {
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "nodes": [
+            {
+              "node_id": 1,
+              "rssi": -45,
+              "ts_ms": 1000500
+            },
+            {
+              "node_id": 2,
+              "rssi": -60,
+              "ts_ms": 1000100
+            },
+            {
+              "node_id": 3,
+              "rssi": -70,
+              "ts_ms": 1000200
+            }
+          ],
+          "mac_hex": "aabbccdd"
+        }
+      ]
+    },
+    {
+      "name": "two_bands_separate_windows",
+      "obs": [
+        {
+          "node_id": 1,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -60,
+          "ts_ms": 1000000,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 2,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -60,
+          "ts_ms": 1000000,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 3,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "rssi": -60,
+          "ts_ms": 1000000,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 1,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 1,
+          "rssi": -60,
+          "ts_ms": 1000000,
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "node_id": 2,
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 1,
+          "rssi": -60,
+          "ts_ms": 1000000,
+          "mac_hex": "aabbccdd"
+        }
+      ],
+      "exp_wins": [
+        {
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 0,
+          "nodes": [
+            {
+              "node_id": 1,
+              "rssi": -60,
+              "ts_ms": 1000000
+            },
+            {
+              "node_id": 2,
+              "rssi": -60,
+              "ts_ms": 1000000
+            },
+            {
+              "node_id": 3,
+              "rssi": -60,
+              "ts_ms": 1000000
+            }
+          ],
+          "mac_hex": "aabbccdd"
+        },
+        {
+          "mac": [
+            170,
+            187,
+            204,
+            221
+          ],
+          "band": 1,
+          "nodes": [
+            {
+              "node_id": 1,
+              "rssi": -60,
+              "ts_ms": 1000000
+            },
+            {
+              "node_id": 2,
+              "rssi": -60,
+              "ts_ms": 1000000
+            }
+          ],
+          "mac_hex": "aabbccdd"
+        }
+      ]
+    }
+  ]
+}

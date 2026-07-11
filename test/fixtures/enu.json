@@ -1,0 +1,42 @@
+{
+  "forward": [
+    {
+      "name": "fwd_nonequatorial",
+      "lat": -24.6512,
+      "lon": 25.9123,
+      "ref_lat": -24.65,
+      "ref_lon": 25.91,
+      "exp_east_cm": 23270.407668555923,
+      "exp_north_cm": -13358.400000008416
+    },
+    {
+      "name": "fwd_ref_at_origin",
+      "lat": -24.65,
+      "lon": 25.91,
+      "ref_lat": -24.65,
+      "ref_lon": 25.91,
+      "exp_east_cm": 0,
+      "exp_north_cm": 0
+    }
+  ],
+  "inverse": [
+    {
+      "name": "inv_roundtrip",
+      "east_cm": 23270.407668555923,
+      "north_cm": -13358.400000008416,
+      "ref_lat": -24.65,
+      "ref_lon": 25.91,
+      "exp_lat": -24.6512,
+      "exp_lon": 25.9123
+    },
+    {
+      "name": "inv_coslat_floor_near_pole",
+      "east_cm": 100000,
+      "north_cm": 0,
+      "ref_lat": 89.99999,
+      "ref_lon": 10,
+      "exp_lat": 89.99999,
+      "exp_lon": 18.98311174991017
+    }
+  ]
+}
